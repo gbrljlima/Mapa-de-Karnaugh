@@ -12,3 +12,12 @@ void saidas() {
     }
   }
 }
+int desejaRepetir(){
+  char repetir;
+  printf("\nDeseja repetir? s/n\n");
+  scanf(" %c", &repetir);
+  if(repetir== 's')
+    return 1;
+  else
+    return 0;
+}

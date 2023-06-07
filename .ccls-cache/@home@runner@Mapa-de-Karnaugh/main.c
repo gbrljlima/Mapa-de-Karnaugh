@@ -16,12 +16,10 @@ int s[8];
 int main() {
   char repetir;
   do {
+    system("clear");
     saidas();
     mapa();
-    formulas();
-    printf("\nDeseja repetir? s/n\n");
-    scanf("%s", &repetir);
-    system("clear");
-  } while (repetir == 's');
+    formulas();  
+  } while (desejaRepetir());
   return 0;
 }
